@@ -5,9 +5,13 @@ Home: https://github.com/googleapis/python-videointelligence
 
 Package license: Apache-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/google-cloud-videointelligence-feedstock/blob/master/LICENSE.txt)
 
 Summary: Google Cloud Video Intelligence API client library
+
+Development: https://github.com/googleapis/python-videointelligence
+
+Documentation: https://googleapis.dev/python/videointelligence/latest/index.html
 
 Google Cloud Video Intelligence API is a Google Cloud service that makes videos searchable, and discoverable, by extracting metadata with an easy to use API. You can now search every moment of every video file in your catalog and find every occurrence as well as its significance. It quickly annotates videos stored in Google Cloud Storage, and helps you identify key nouns entities of your video, and when they occur within the video. Separate signal from noise, by retrieving relevant information at the video, shot or per frame.
 See the [quick start guide](https://googleapis.dev/python/videointelligence/latest/index.html#quick-start).
