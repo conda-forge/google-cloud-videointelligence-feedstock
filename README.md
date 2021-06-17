@@ -5,9 +5,13 @@ Home: https://github.com/googleapis/python-videointelligence
 
 Package license: Apache-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/google-cloud-videointelligence-feedstock/blob/master/LICENSE.txt)
 
 Summary: Google Cloud Video Intelligence API client library
+
+Development: https://github.com/googleapis/python-videointelligence
+
+Documentation: https://googleapis.dev/python/videointelligence/latest/index.html
 
 Google Cloud Video Intelligence API is a Google Cloud service that makes videos searchable, and discoverable, by extracting metadata with an easy to use API. You can now search every moment of every video file in your catalog and find every occurrence as well as its significance. It quickly annotates videos stored in Google Cloud Storage, and helps you identify key nouns entities of your video, and when they occur within the video. Separate signal from noise, by retrieving relevant information at the video, shot or per frame.
 See the [quick start guide](https://googleapis.dev/python/videointelligence/latest/index.html#quick-start).
@@ -39,6 +43,7 @@ Installing `google-cloud-videointelligence` from the `conda-forge` channel can b
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `google-cloud-videointelligence` can be installed with:
@@ -109,9 +114,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
