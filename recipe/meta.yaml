@@ -17,16 +17,19 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip >=18.1
   run:
-    - python
-    - google-api-core-grpc >=1.14.0,<2.0.0dev
+    - python >=3.6
+    - google-api-core-grpc >=1.22.2,<2.0.0dev
+    - proto-plus >=1.10.0
+    - packaging >=14.3
 
 test:
   imports:
     - grpc
     - google.cloud.videointelligence
+    - google.cloud.videointelligence_v1
 
 about:
   home: https://github.com/googleapis/python-videointelligence
