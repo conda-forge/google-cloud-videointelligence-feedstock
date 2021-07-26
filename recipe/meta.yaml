@@ -1,6 +1,6 @@
 {% set name = "google-cloud-videointelligence" %}
-{% set version = "2.3.1" %}
-{% set sha256 = "98f3b72d82b65d929c4866a377b46a408271e712c01ad6a0178b714ee3c370e0" %}
+{% set version = "2.3.2" %}
+{% set sha256 = "fb61f0b1164cfe1d9e5665fab9511bd6cf5eb43820a06b90837aa3ee15e3fc04" %}
 
 package:
   name: {{ name|lower }}
