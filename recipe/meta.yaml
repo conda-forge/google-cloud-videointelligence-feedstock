@@ -1,14 +1,13 @@
 {% set name = "google-cloud-videointelligence" %}
-{% set version = "1.15.0" %}
-{% set sha256 = "c2b4b3579196c0bb7301fbe1de7008ac5081f88afc0599a10ee79a5ade385922" %}
+{% set version = "1.16.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/google-cloud-videointelligence-{{ version }}.tar.gz
+  sha256: cf88ce17dc7c3cc1aed3be754efbcaff16286a71a35bd3992f1f26e2f686f80e
 
 build:
   number: 0
@@ -17,16 +16,20 @@ build:
 
 requirements:
   host:
-    - python
-    - pip >=18.1
+    - python >=3.4
+    - pip
   run:
-    - python
-    - google-api-core-grpc >=1.14.0,<2.0.0dev
+    - python >=3.4
+    - google-api-core-grpc >=1.31.5,<3.0.0dev,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0
 
 test:
   imports:
     - grpc
     - google.cloud.videointelligence
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://github.com/googleapis/python-videointelligence
