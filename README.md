@@ -7,7 +7,7 @@ Package license: Apache-2.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/google-cloud-videointelligence-feedstock/blob/main/LICENSE.txt)
 
-Summary: Google Cloud Video Intelligence API client library
+Summary: Google Cloud Videointelligence API client library
 
 Development: https://github.com/googleapis/python-videointelligence
 
