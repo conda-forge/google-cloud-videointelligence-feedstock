@@ -1,5 +1,5 @@
 {% set name = "google-cloud-videointelligence" %}
-{% set version = "2.11.4" %}
+{% set version = "2.12.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/google-cloud-videointelligence-{{ version }}.tar.gz
-  sha256: 07ace299a63f5b3d4441375634853b55ce8f90c62c6a24f8a47eb054149f6f99
+  sha256: 4b0194932cd2604199b8805bc108692e6a2a259f4777516b9cbc978b8871e295
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
   run:
     - python >=3.7
     - google-api-core-grpc >=1.34.0,<3.0.0dev,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,!=2.10.*
-    - proto-plus >=1.22.0,<2.0.0dev
+    - proto-plus >=1.22.3,<2.0.0dev
     - protobuf >=3.19.5,<5.0.0dev,!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5
 
 test:
@@ -35,7 +35,7 @@ test:
     - pip check
 
 about:
-  home: https://github.com/googleapis/python-videointelligence
+  home: https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-videointelligence
   summary: Google Cloud Videointelligence API client library
   license: Apache-2.0
   license_family: Apache
