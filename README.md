@@ -9,7 +9,7 @@ Package license: Apache-2.0
 
 Summary: Google Cloud Videointelligence API client library
 
-Development: https://github.com/googleapis/python-videointelligence
+Development: https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-videointelligence
 
 Documentation: https://googleapis.dev/python/videointelligence/latest/index.html
 
