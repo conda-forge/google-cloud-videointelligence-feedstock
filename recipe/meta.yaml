@@ -1,5 +1,5 @@
 {% set name = "google-cloud-videointelligence" %}
-{% set version = "2.14.1" %}
+{% set version = "2.15.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: c3477862f6e1b54b1007481943a4974cd29e0d122e73dd810cd414adf761f4ec
+  sha256: f4979df39056aba2e2650642a39848ed69fc8f145df0dd823e4743c36268bf25
 
 build:
   noarch: python
