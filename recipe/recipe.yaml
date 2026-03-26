@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: google-cloud-videointelligence
-  version: "2.18.0"
+  version: "2.19.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/google_cloud_videointelligence-${{ version }}.tar.gz
-  sha256: b2ae39bd22d186218684a297c2fa2fa636e5874e69d39f719504d729f44639fd
+  sha256: 7b320c18a0475b08dde9b60a0fbfdf8915320c20966159fad80b5594089d561e
 
 build:
   number: 0
