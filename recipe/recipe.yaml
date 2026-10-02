@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: google-cloud-videointelligence
-  version: "2.20.0"
+  version: "2.21.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/google_cloud_videointelligence-${{ version }}.tar.gz
-  sha256: e4492d333843f040191b4730ff58a0a4aea1008350053879bc4058ddf62da8a0
+  sha256: e2016c3d11959e1b52e4d64091f71ecbfe4a9e10f395e5103c949b199b0eecbf
 
 build:
   number: 0
@@ -24,14 +24,12 @@ requirements:
     - setuptools
   run:
     - python >=${{ python_min }}
-    - google-api-core >=2.17.1,<3.0.0
-    - google-api-core-grpc
+    - google-api-core-grpc >=2.28.0,<3.0.0
     - google-auth >=2.14.1,<3.0.0,!=2.24.0,!=2.25.0
-    # more restrictive constraint for python >=3.14
+    # tightest of upstream's floors (python >=3.14)
     - grpcio >=1.75.1,<2.0.0
-    # more restrictive constraint for python >=3.13
-    - proto-plus >=1.25.0,<2.0.0
-    - protobuf >=4.25.8,<8.0.0
+    - proto-plus >=1.26.1,<2.0.0
+    - protobuf >=6.33.5,<8.0.0
 
 tests:
   - python:
